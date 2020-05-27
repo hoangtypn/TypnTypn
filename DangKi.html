@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Đăng Ký</title>
+        <link rel = "stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color:black;margin-top: 0px;padding: 0px">
+        
+<!--       sign in-->
+ <div class="body" style="background-image:url(image/nen-4k-dep-me-hoac-lp032x1.jpg);">
+    <div>
+        <h2 style="margin-top:20px;color:#FCF;text-align: center">Bạn đã có tài khoản? <a href="DangNhap.html" style="color:#F90;">Đăng Nhập</a></h2>
+	<form>
+  	<p style="color:#FFF;text-align: center"><span style="color:#F00;">Nếu không thì làm ơn*</span>Đăng Kí</p>
+  	<div class="login">
+    	<label for="firstName">First Name <span style="color:#F00;">*</span></label>
+        <input type="text" name="firstName" required tabindex="1" placeholder="First Name"/>
+  	</div>
+   
+  	<div class="login">
+    	<label for="lastName">Last Name <span style="color:#F00;">*</span></label>
+        <input type="text" name="lastName" required tabindex="2" placeholder="Last Name"/>
+  	</div>
+   
+  	<div class="login" style="color:#FFF;">
+    	<label for="sex" id="sex">Sex <span style="color:#F00;">*</span></label>
+      	<input name="sex" type="radio"  tabindex="3" style="left:145px; position:relative;"/><span  style="left:155px; position:relative;">Male</span>
+      	<input type="radio" name="sex" tabindex="4" style="left:190px; position:relative;"/><span  style="left:200px; position:relative;">Female</span>
+      	<input type="radio" name="sex" tabindex="4" style="left:220px; position:relative;"/><span  style="left:230px; position:relative;">Others</span>
+  	</div>
+   
+  	<div class="login">    
+	<script>
+			$(function () {
+				$("#DOB").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					dateFormat: 'dd/mm/yy',
+					yearRange: '-80: +0'
+				});
+			});	
+    </script>
+  		<label for="dob">Date of Birth <span style="color:#F00;">*</span></label>
+		<input name="dob" type="text" id="DOB" />
+  	</div>
+  
+   	<div class="login">
+    	<label for="email">Email <span style="color:#F00;">*</span></label>
+        <input type="email" name="email" required tabindex="6" placeholder="example@example.com"/>
+    </div>
+    
+    <div class="login">
+    	<label for="userName">User Name <span style="color:#F00;">*</span></label>
+        <input type="text" name="userName" required tabindex="7" placeholder="User Name"/>
+    </div>
+    
+    <div class="login">
+    	<label for="pass">Password <span style="color:#F00;">*</span></label>
+        <input type="password" name="pass" required tabindex="8"/>
+    </div>
+    
+    <div class="login">
+    	<label for="re-pass">Re-Pasword <span style="color:#F00;">*</span></label>
+        <input type="password" name="re-pass" required tabindex="9"/>
+    </div>
+    
+    <div class="login">
+        <input type="checkbox" name="" required tabindex="10"/>
+        <i for="agree" style="bottom:10px !important;color:#0099ff">I agree with </i>
+    </div>
+    
+  	<div class="login">
+    	<input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="Sign Up">
+  	</div>
+	</form>
+    </div>
+		</div>
+
+    </body>
+</html>

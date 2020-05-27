@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link rel = "stylesheet" href="style.css" type="text/css">
+         <script type="text/javascript" src="changeZize.js"></script>
+        <title>Marvel&DC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color:black;margin-top: 0px;padding: 0px;">
+ <!--header-->   
+<!-- logo-->
+        <div id="header" style="border:black 1px solid;height: 80px;margin :0 auto;background-color:black;position: fixed;"> 
+            <div style="border: #F00 1px solid;height: 80px;width: 200px;margin :0 auto;float: left;">
+                <img src="http://www.thepantheronline.com/site/wp-content/uploads/2016/10/Marvel-Comics-Logo.svg_-1024x463.png" style="width:200px;height:80px;border:0;">
+            </div>
+            <div style="border: black 1px solid;height: 80px;width: 250px;margin :0 auto;float: left;">
+                <img src="https://vignette.wikia.nocookie.net/dc-comics-fanfiction/images/6/6e/DC_Cinematic_Universe_GGD_Logo.jpg/revision/latest?cb=20170327002631https://vignette.wikia.nocookie.net/newdcmovieuniverse/images/f/f9/12552791_432033053662307_3859881193360781146_n.png" style="width:250px;height:80px;border:0;">
+            </div>
+            <div style="border: black 1px solid;height: 80px;width: 1045px;margin :0 auto;float: left">
+ <!-- search-->
+                <div style="border:black 0.1px solid;height: 38px;width: 200px;margin :0 auto;margin-top: 0;float:right">
+                    <input style="color:blue" type="text" value="...search" onfocus="if(value=='...search'){value=''}" onblur="if(value=='') {value='...search'}" />
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1IKZe5nafLD3UFdsg-8FD1XXQVOplgdn-pUtc5qXgmtmPBufz" style="margin-top:5px;height: 17px;width: 17px;color: black">
+                </div>
+<!--   menu-->
+                <div style="border:black 0px solid;height: 38px;width: 1061px;margin :0 auto;">
+                    <ul class="menu">
+                        <li><a  href="MarvelDC.html" target="noideloaddulieu"><h2 onclick="size(3)">Trang Chủ</h2></a></li>
+                        <li><a  href="Marvel.html" target="noideloaddulieu"><h2 onclick="size(3.07)">Marvel</h2></a> </li>
+                        <li><a href="DC.html" target="noideloaddulieu" ><h2 onclick="size(2)">DC</h2></a></li>
+                        <li><a href="DangNhap.html" target="noideloaddulieu"><h2 onclick="size(1)">Đăng Nhập</h2></a></li>
+                        <li><a href="GiaiTri.html" target="noideloaddulieu"><h2 onclick="size(0.7)">Giải Trí</h2></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!--end-header-->
+ <!--page container-->
+                        <div style="height: 70px;"></div>
+                        <iframe id="ifram" name ="noideloaddulieu"  src ="MarvelDC.html" style="height:3000px;width:1500px;background-color: black;border:black" SCROLLING="no" >
+
+                    </iframe>
+       
+ <!--End-pagecontainer-->
+
+  <!--Footer-->
+  <div style="border:black 1px solid;height:50px;margin: 0 auto;background-color:black"></div>
+        <div style="border:black 1px solid;height:400px;margin: 0 auto;background-color:black">
+            <div style="border:black 1px solid;height:400px;width: 600px;margin: 0 auto;background-color:black;float: left">
+                <h2 style="color:#ccccff;text-align: center;">More About Company</h2>
+                <p style="color:#ccccff;text-align: center">  Marvel Entertainment,
+                    Inc, một công ty con của Công ty Walt Disney, 
+                    sở hữu nhà xuất bản Marvel.</p>
+                <p style="color:#ccccff;text-align: center">© 2016 Simple Footer Widget. All Rights Reserved | Design by Leoo</p>
+            </div>
+            <div style="border:black 1px solid;height:400px;width:300px; margin: 0 auto;background-color:black;float: left">
+                <h2 style="color:#ccccff;text-align: center">Keep Connected</h2>
+                <ul class="footer">
+                    <li><a href="#"><i><img src="image\social2.png"  ></i><span style="color: blue;margin-left: 90px;">Like us on Facebook</span></a></li>
+                    <li><a  href="#"><i><img src="image\social1.png" ></i><span style="color:#99ccff; margin-left: 90px;">Follow us on Twitter</span></a></li>
+                    <li><a  href="#"><i><img src="image\social3.png" ></i><span style="color:#ff6666; margin-left: 90px;">Add us on Google Plus</span></a></li>
+                    <li><a href="#"><i><img src="image\social4.png" ></i><span style="color:pink; margin-left: 90px;">Follow us on Dribbble</span></a></li>
+                    <li><a  href="#"><i><img src="image\social5.png" ></i><span style="color:red; margin-left: 90px;">Follow us on Pinterest</span></a></li>
+                </ul>
+            </div>
+            <div style="border:black 1px solid;height:400px;width: 500px;margin: 0 auto;background-color:black;float: right">
+                <h2 style="color:#ccccff;text-align: center;">Contact Imformation</h2>
+                <p style="color:#ccccff;text-align: center">  Marvel Entertainment,</br>
+                    American,</br> 
+                    01234567890</br>
+                    <a href="mailto:info@example.com">contact@example.com</a>
+                </p>
+            </div>
+        </div>
+ <!--End-footer-->
+    </body>
+</html>

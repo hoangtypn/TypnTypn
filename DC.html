@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>DC</title>
+         <link rel = "stylesheet" href="style.css" type="text/css">
+         <script type="text/javascript" src="InAnh.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color:black;margin-top: 0px;padding: 0px">
+ <!--page container-->
+        <div class="change" style="border: #F00 1px solid;height:2600px;margin: 0 auto;background-color: black;">
+ <!-- anh nen  -->
+                <div style="border:black 1px solid;height:600px;margin: 0 auto;" >
+                <img name="anhnen" src="image/dc1.jpg" style="height:600px;width: 1500px"> 
+
+            </div>
+            <!--noi bat-->
+            <div style="border:black 1px solid;height:2300px;margin: 0 auto;background-image: url(image/250502.jpg);background-repeat:no-repeat;
+                                    background-position:center;
+                                    background-size:cover;">
+                <div style="height:80px;margin: 0 auto;background-color: black;"></div>
+                <div style="height:40px;margin: 0 auto;"></div>     
+                <!--    DC studio>noi bat-->
+                <div style="height:600px;margin: 0 auto;">
+                    <div style=" width:250px !important;float: left"><font><strong><a style="color:#6666ff">DC STUDIO>>Tổng Hợp>></a></strong></font></div>  	
+                    <div style="height:360px;width: 1270px;float: right" id="noichuathongtin" class="zoom"><script type="text/javascript">run();</script></div>           
+                </div>
+                <div style="height:80px;width: 1290px;margin: 0 auto;float:right"></div>
+                <iframe style="padding-left: 30px;" width="650" height="400" src="https://www.youtube.com/embed/X7SiuQxhAjg" frameborder="0" allowfullscreen></iframe>
+           <iframe style="padding-left: 40px;" width="650" height="400" src="https://www.youtube.com/embed/dkLMLGkcTsw" frameborder="0" allowfullscreen></iframe>       </div>
+        </div>
+<!--End-pagecontainer-->
+        <script type="text/javascript">
+  window.onload = function(){
+    setTimeout("switch_Image()", 2000);
+  }
+  var current = 1;
+  var num_image = 4;
+  function switch_Image(){
+      current++;
+      document.images['anhnen'].src ='C:/Users/Admin/Documents/NetBeansProjects/Project/src/image/dc' + current + '.jpg';
+     if(current < num_image){
+       setTimeout("switch_Image()", 2000);
+     }else if(current == num_image){
+       current = 0;
+       setTimeout("switch_Image()", 2000);
+     }
+ }
+ </script>
+    </body>
+</html>

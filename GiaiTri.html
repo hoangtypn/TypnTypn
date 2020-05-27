@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Giải Trí</title>
+        <link rel = "stylesheet" href="style.css" type="text/css">
+              <link rel="stylesheet" type="text/css" href="gt.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table{
+                margin: auto;
+                border:black;
+            }
+            .abc{
+                height: 100px;
+                width: 150px;
+            }
+            #noichuathongtin{
+                height: 1000px;
+            }
+        </style>
+    </head>
+     <body style="background-color:black;margin-top: 0px;padding: 0px;">
+
+<div class="body" style="background-image: url(image/Hinh-nen-4k-phong-canh-dep-cho-may-tinh.jpg);">
+    <div style="height:400px;width: 330px;margin: 0 auto;float:left;" >
+        <h1 style="color:red;text-align: center">Game Vui trí nhớ</h1>
+        <h2 style="color:yellow;text-align: center">Luật chơi:</h2>
+        <h4 style="color:yellow;text-align: center">Khi người chơi nhấn nút "play"<br>game sẽ được bắt đầu<br>
+            Sẽ có tất cả 6 ảnh khác nhau ứng với<br>
+            6 siêu anh hùng cùng với thứ tự của ảnh<br>
+            người chơi phải đoán đúng thứ tự ảnh hiện lên<br>
+            Lưu ý*:không phải tất cả các ảnh sẽ xuất hiện <br>
+            và có những ảnh sẽ xuất hiện nhiều hơn 1 lần
+        
+        </h4>
+    </div>
+     <div style="height:400px;width: 300px;margin: 0 auto;float:right;" >
+         <h1 style="color:yellow;text-align: left">1-IronMan</h1>
+         <h1 style="color:yellow;text-align: left">2-Thor</h1>
+         <h1 style="color:yellow;text-align: left">3-Captain America</h1>
+         <h1 style="color:yellow;text-align: left">4-Spider-Man</h1>
+         <h1 style="color:yellow;text-align: left">5-Black Panther</h1>
+         <h1 style="color:yellow;text-align: left">6-CaptainMarvel</h1>
+    </div>
+<div style="height:400px;width: 800px;margin: 0 auto;float:center" >
+                <img name="anhnen1" src="image/maxresdefault22.jpg" style="height:400px;width: 800px"> 
+                <button onclick="switch_Image()" style="height: 50px;width: 800px;color:#ffff00;background-color:#333;border: blue">Play</button>
+                <p style="color:#ffff00;margin-left: 200px">Your Answer<input type="number" id="inputN" style="width: 200px;background-color: wheat;">
+    <button onclick="check()" style="height: 30px;width: 100px;background-color: #333;color:#ffff00">check</button>
+            </div>
+    <script type="text/javascript" src="gt.js"></script>
+   
+</div>
+
+    </body>
+</html>
+
+<!--
+lam game lat bai
+-->
